@@ -4,6 +4,7 @@
 
 EduMind is an AI-powered learning and knowledge management platform that enables students and faculty to organize, search, and interact with academic resources. The platform integrates semantic search, AI-powered document analysis, personalized learning, and role-based access to enhance resource discovery and the overall learning experience.
 
+> **For Live Website -** **[Click here](https://edumind-mgtr.onrender.com)**
 ---
 
 ## Features
