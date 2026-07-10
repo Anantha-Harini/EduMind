@@ -1,0 +1,29 @@
+Operating Systems - Process Management
+
+Chapter 1: Process Concepts
+
+A Process is an instance of a program in execution. It contains the program code, current activity represented by the program counter, process stack, data section, and heap memory.
+
+Process States include New, Ready, Running, Waiting, and Terminated. The operating system manages transitions between these states using scheduling algorithms and interrupt handling.
+
+A Process Control Block stores all the information needed to track a process, including process state, program counter, CPU registers, memory management information, and I/O status.
+
+Chapter 2: CPU Scheduling
+
+First Come First Served is the simplest scheduling algorithm. Processes are executed in the order they arrive in the ready queue. It is non-preemptive but can suffer from the convoy effect.
+
+Round Robin scheduling assigns a fixed time quantum to each process. When the time quantum expires, the process is moved to the back of the ready queue. It provides fair CPU allocation and is widely used in time-sharing systems.
+
+Shortest Job First selects the process with the smallest execution time. It minimizes average waiting time but requires knowledge of future CPU burst lengths, which is often estimated.
+
+Priority Scheduling assigns a priority to each process. The CPU is allocated to the process with the highest priority. Aging is used to prevent starvation of low-priority processes.
+
+Chapter 3: Threads and Concurrency
+
+A Thread is the smallest unit of CPU utilization. It comprises a thread ID, program counter, register set, and stack. Threads within the same process share code, data, and system resources.
+
+Multithreading allows a process to have multiple threads executing concurrently. This improves responsiveness, enables resource sharing, and takes advantage of multiprocessor architectures.
+
+Race Conditions occur when multiple threads access shared data concurrently and the outcome depends on the order of execution. Synchronization mechanisms like mutexes and semaphores prevent race conditions.
+
+Deadlock is a situation where two or more processes are unable to proceed because each is waiting for the other to release a resource. The four necessary conditions for deadlock are mutual exclusion, hold and wait, no preemption, and circular wait.

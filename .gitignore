@@ -1,0 +1,30 @@
+# .gitignore
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+venv/
+.venv/
+# VS Code
+.vscode/
+# PyCharm
+.idea/
+# Jupyter notebooks
+.ipynb_checkpoints/
+# OS‑specific files
+.DS_Store
+Thumbs.db
+# Build artefacts
+dist/
+build/
+*.egg-info/
+# Node / Vite
+node_modules/
+dist/
+.vite/
+# Generated files you don’t need in the repo
+faiss_db/
+chroma_db/
+uploads/          # optional – keep if you want to store the seed files elsewhere

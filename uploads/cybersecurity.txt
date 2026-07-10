@@ -1,0 +1,29 @@
+Cybersecurity Fundamentals and Best Practices
+
+Chapter 1: Security Fundamentals
+
+Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks. These attacks are usually aimed at accessing, changing, or destroying sensitive information.
+
+The CIA Triad represents the three core principles of information security: Confidentiality ensures data is accessible only to authorized users, Integrity ensures data accuracy and completeness, and Availability ensures data and systems are accessible when needed.
+
+Authentication is the process of verifying the identity of a user or system. Common methods include passwords, biometrics, and multi-factor authentication. Strong authentication prevents unauthorized access.
+
+Authorization determines what actions an authenticated user is permitted to perform. Role-based access control assigns permissions based on user roles, following the principle of least privilege.
+
+Chapter 2: Common Threats
+
+SQL Injection is a code injection technique that exploits vulnerabilities in database queries. Attackers insert malicious SQL code through user inputs to manipulate or extract data from the database.
+
+Cross-Site Scripting allows attackers to inject malicious scripts into web pages viewed by other users. It can steal session cookies, redirect users, or deface websites.
+
+Phishing is a social engineering attack where attackers send fraudulent communications that appear to come from a reputable source. The goal is to steal sensitive data like login credentials or credit card numbers.
+
+Ransomware is a type of malware that encrypts victim files and demands payment for the decryption key. It can spread through email attachments, infected software, and vulnerable network services.
+
+Chapter 3: Encryption
+
+Symmetric Encryption uses the same key for both encryption and decryption. AES (Advanced Encryption Standard) is the most widely used symmetric encryption algorithm. It is fast and suitable for encrypting large amounts of data.
+
+Asymmetric Encryption uses a pair of keys: a public key for encryption and a private key for decryption. RSA is a widely used asymmetric algorithm. It enables secure key exchange and digital signatures.
+
+Hashing is a one-way function that converts data into a fixed-size string. SHA-256 is commonly used for password storage and data integrity verification. Hash functions are irreversible by design.

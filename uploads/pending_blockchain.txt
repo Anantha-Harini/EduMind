@@ -1,0 +1,9 @@
+Blockchain Technology Overview
+    
+Blockchain is a distributed ledger technology that records transactions across multiple computers. It ensures transparency, immutability, and security without requiring a central authority.
+
+A block contains a list of transactions, a timestamp, and a cryptographic hash of the previous block. This chain of blocks creates a tamper-evident record of all transactions.
+
+Smart Contracts are self-executing contracts with the terms directly written in code. They run on blockchain platforms like Ethereum and automatically enforce agreements when conditions are met.
+
+Consensus Mechanisms like Proof of Work and Proof of Stake enable distributed networks to agree on the state of the blockchain. They prevent double-spending and ensure network integrity.

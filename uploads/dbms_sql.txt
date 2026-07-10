@@ -1,0 +1,35 @@
+Database Management Systems - SQL Mastery Guide
+
+Chapter 1: Relational Database Concepts
+
+A Relational Database organizes data into tables (relations) consisting of rows (tuples) and columns (attributes). Each table represents an entity, and relationships between entities are maintained through foreign keys.
+
+A Primary Key is a column or set of columns that uniquely identifies each row in a table. It must contain unique values and cannot be NULL. Primary keys ensure entity integrity.
+
+A Foreign Key is a column that creates a link between two tables. It references the primary key of another table, establishing referential integrity and enabling joins.
+
+Normalization is the process of organizing data to minimize redundancy and dependency. The main normal forms are First Normal Form, Second Normal Form, Third Normal Form, and Boyce-Codd Normal Form.
+
+Chapter 2: SQL Queries
+
+SELECT is the most commonly used SQL statement for retrieving data from a database. It can include WHERE clauses for filtering, ORDER BY for sorting, and GROUP BY for aggregation.
+
+JOIN operations combine rows from two or more tables based on related columns. INNER JOIN returns matching rows, LEFT JOIN returns all rows from the left table, and RIGHT JOIN returns all rows from the right table.
+
+Aggregate Functions include COUNT, SUM, AVG, MIN, and MAX. They perform calculations on a set of values and return a single result. The HAVING clause filters groups created by GROUP BY.
+
+Subqueries are queries nested inside another query. They can be used in WHERE, FROM, and SELECT clauses. Correlated subqueries reference columns from the outer query and execute once for each row.
+
+Chapter 3: Transactions
+
+A Transaction is a logical unit of work that contains one or more SQL statements. It must satisfy the ACID properties: Atomicity, Consistency, Isolation, and Durability.
+
+Atomicity ensures that either all operations in a transaction are completed or none of them are applied. This is the "all-or-nothing" property.
+
+Isolation ensures that concurrent transactions do not interfere with each other. Different isolation levels include Read Uncommitted, Read Committed, Repeatable Read, and Serializable.
+
+Chapter 4: Indexing
+
+An Index is a data structure that improves the speed of data retrieval operations. B-Tree indexes are the most common type, providing efficient lookups, range queries, and sorted access.
+
+A Clustered Index determines the physical order of data in a table. Each table can have only one clustered index. A non-clustered index contains pointers to the data rows and does not affect physical ordering.

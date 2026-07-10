@@ -1,0 +1,33 @@
+Discrete Mathematics for Computer Science
+
+Chapter 1: Mathematical Logic
+
+Propositional Logic deals with propositions that are either true or false. The fundamental connectives include AND (conjunction), OR (disjunction), NOT (negation), and IMPLIES (conditional).
+
+A tautology is a proposition that is always true regardless of the truth values of its components. For example, P OR NOT P is always true.
+
+Predicate Logic extends propositional logic by introducing variables, quantifiers, and predicates. The universal quantifier states that a predicate is true for all values, while the existential quantifier states it is true for at least one value.
+
+Chapter 2: Set Theory
+
+A Set is a well-defined collection of distinct objects. Set operations include union, intersection, difference, and complement. The power set of a set S is the set of all subsets of S.
+
+Relations and Functions are fundamental concepts in discrete mathematics. A relation R on a set A is a subset of the Cartesian product A x A. A function is a special relation where each input maps to exactly one output.
+
+Equivalence Relations are reflexive, symmetric, and transitive. They partition a set into disjoint equivalence classes, which is important in modular arithmetic and abstract algebra.
+
+Chapter 3: Combinatorics
+
+The Counting Principle states that if one event can occur in m ways and another in n ways, they can occur together in m times n ways. This is the foundation for permutation and combination calculations.
+
+Permutations are arrangements of objects where order matters. The number of permutations of n objects taken r at a time is n factorial divided by (n-r) factorial.
+
+Combinations are selections where order does not matter. The binomial coefficient C(n,r) gives the number of ways to choose r items from n items.
+
+The Pigeonhole Principle states that if n items are placed into m containers with n greater than m, then at least one container must hold more than one item. Despite its simplicity, it has powerful applications in proofs.
+
+Chapter 4: Graph Theory
+
+A graph G consists of a set of vertices V and a set of edges E. Graphs can be directed or undirected, weighted or unweighted. They model relationships and connections in computer networks, social networks, and transportation systems.
+
+Euler's theorem states that a connected graph has an Eulerian circuit if and only if every vertex has even degree. This elegant result has applications in circuit design and route planning.

@@ -1,0 +1,37 @@
+Data Structures and Algorithms - Complete Study Guide
+
+Chapter 1: Introduction to Data Structures
+
+A data structure is a way of organizing and storing data so that it can be accessed and modified efficiently. Data structures are fundamental to computer science and form the backbone of efficient software development.
+
+Arrays are the simplest data structures. An array is a collection of elements stored in contiguous memory locations. Arrays provide O(1) access time for element retrieval by index, making them extremely efficient for random access patterns.
+
+A Linked List is a linear data structure where elements are stored in nodes. Each node contains data and a reference to the next node. Unlike arrays, linked lists allow efficient insertion and deletion at any position in O(1) time, but accessing an element requires O(n) traversal.
+
+Chapter 2: Trees and Graphs
+
+A Binary Search Tree is a hierarchical data structure where each node has at most two children. The left child contains values less than the parent, and the right child contains values greater than the parent. BSTs support search, insert, and delete operations in O(log n) average time.
+
+AVL Trees are self-balancing binary search trees where the height difference between left and right subtrees is at most 1. This guarantees O(log n) time complexity for all operations, preventing worst-case O(n) degradation.
+
+A Graph is a non-linear data structure consisting of vertices and edges. Graphs can represent networks, social connections, maps, and many real-world relationships. Graph traversal algorithms include Breadth-First Search (BFS) and Depth-First Search (DFS).
+
+BFS explores all neighbors at the present depth before moving to vertices at the next depth level. It uses a queue data structure and is optimal for finding shortest paths in unweighted graphs.
+
+DFS explores as far as possible along each branch before backtracking. It uses a stack (or recursion) and is useful for detecting cycles, topological sorting, and finding connected components.
+
+Chapter 3: Sorting Algorithms
+
+Quick Sort is a divide-and-conquer algorithm that selects a pivot element and partitions the array around it. It has an average time complexity of O(n log n) but O(n^2) in the worst case.
+
+Merge Sort is another divide-and-conquer algorithm that divides the array into two halves, recursively sorts them, and merges the results. It guarantees O(n log n) performance in all cases but requires O(n) additional space.
+
+Heap Sort uses a binary heap data structure to sort elements. It has O(n log n) time complexity and sorts in-place with O(1) extra space.
+
+Chapter 4: Dynamic Programming
+
+Dynamic Programming is a technique for solving complex problems by breaking them into overlapping subproblems. It stores solutions to subproblems to avoid redundant computation, achieving significant performance improvements.
+
+The Fibonacci sequence can be computed in O(n) time using dynamic programming instead of O(2^n) with naive recursion. Memoization stores previously computed values in a table for quick lookup.
+
+Common DP problems include the Knapsack Problem, Longest Common Subsequence, Matrix Chain Multiplication, and Edit Distance.

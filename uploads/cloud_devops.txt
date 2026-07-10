@@ -1,0 +1,37 @@
+Cloud Computing and DevOps - Practical Handbook
+
+Chapter 1: Cloud Computing Fundamentals
+
+Cloud Computing is the delivery of computing services over the internet, including servers, storage, databases, networking, software, and analytics. It offers faster innovation, flexible resources, and economies of scale.
+
+Infrastructure as a Service provides virtualized computing resources over the internet. IaaS gives users control over operating systems, storage, and deployed applications. Examples include AWS EC2 and Azure Virtual Machines.
+
+Platform as a Service provides a platform for developing, running, and managing applications without dealing with infrastructure complexity. PaaS offerings include Google App Engine and Heroku.
+
+Software as a Service delivers software applications over the internet on a subscription basis. SaaS eliminates the need for installation and maintenance. Examples include Google Workspace and Salesforce.
+
+Chapter 2: Docker and Containerization
+
+Docker is a platform for developing, shipping, and running applications in containers. A container is a lightweight, standalone executable package that includes everything needed to run a piece of software.
+
+A Dockerfile is a text document containing instructions for building a Docker image. It specifies the base image, application code, dependencies, and runtime configuration.
+
+Docker Compose is a tool for defining and running multi-container Docker applications. It uses a YAML file to configure application services, networks, and volumes.
+
+Chapter 3: Kubernetes Orchestration
+
+Kubernetes is an open-source container orchestration platform that automates deployment, scaling, and management of containerized applications. It groups containers into logical units called Pods.
+
+A Pod is the smallest deployable unit in Kubernetes, consisting of one or more containers that share storage and network resources. Pods are ephemeral by nature.
+
+A Deployment manages the desired state for Pods and ReplicaSets. It enables declarative updates, rolling updates, and rollbacks for applications running in the cluster.
+
+Services in Kubernetes provide a stable network endpoint for accessing a set of Pods. They enable load balancing and service discovery across the cluster.
+
+Chapter 4: CI/CD Pipelines
+
+Continuous Integration is the practice of frequently merging code changes into a shared repository. Automated builds and tests verify each integration, enabling early detection of errors.
+
+Continuous Deployment extends CI by automatically deploying every change that passes the automated tests to production. It requires robust testing and monitoring infrastructure.
+
+Jenkins is an open-source automation server widely used for building CI/CD pipelines. It supports hundreds of plugins for integration with various development tools.

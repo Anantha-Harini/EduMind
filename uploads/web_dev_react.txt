@@ -1,0 +1,29 @@
+Web Development with React and Node.js
+
+Part 1: React Fundamentals
+
+React is a JavaScript library for building user interfaces. It uses a component-based architecture where UIs are built from small, reusable pieces called components. React was developed by Facebook and is maintained by Meta.
+
+JSX is a syntax extension for JavaScript that allows writing HTML-like code in JavaScript files. JSX makes it easier to visualize the structure of the UI and is compiled to regular JavaScript function calls.
+
+State Management in React allows components to manage and respond to changing data. The useState hook provides a way to add state to functional components. When state changes, React re-renders the component efficiently.
+
+Props are read-only inputs passed from parent to child components. They enable data flow through the component hierarchy, following a unidirectional data flow pattern.
+
+The useEffect hook handles side effects in functional components, such as data fetching, subscriptions, and DOM manipulation. It runs after every render by default but can be optimized with dependency arrays.
+
+Part 2: Node.js Backend
+
+Node.js is a JavaScript runtime built on Chrome's V8 engine. It enables server-side JavaScript execution and is particularly well-suited for building scalable network applications.
+
+Express.js is a minimal and flexible Node.js web application framework. It provides robust features for building web and mobile applications, including routing, middleware support, and template engines.
+
+RESTful APIs follow the Representational State Transfer architectural style. They use standard HTTP methods like GET, POST, PUT, and DELETE to perform CRUD operations on resources.
+
+Middleware functions in Express have access to the request object, response object, and the next function in the application request-response cycle. They can execute code, modify requests and responses, and end the cycle.
+
+Part 3: Database Integration
+
+MongoDB is a NoSQL document database that stores data in flexible, JSON-like documents. It is widely used with Node.js applications due to its JavaScript-friendly data format.
+
+SQL databases like PostgreSQL and MySQL store data in structured tables with predefined schemas. They are ideal for applications requiring complex queries, transactions, and data integrity.
