@@ -1,41 +1,34 @@
-# EduMind – AI‑Powered Knowledge Management Portal
+# EduMind – AI-Powered Learning & Knowledge Management Platform
 
-## Overview
-EduMind is a modern, full‑stack platform that helps educational institutions manage, search, and interact with knowledge assets. It combines a **FastAPI** backend, **SQLite** database, and a **React** frontend with AI‑driven features such as semantic search, document summarisation, RAG chatbot, automatic quiz generation, flashcards, and analytics.
+## Project Overview
+
+EduMind is an AI-powered learning and knowledge management platform that enables students and faculty to organize, search, and interact with academic resources. The platform integrates semantic search, AI-powered document analysis, personalized learning, and role-based access to enhance resource discovery and the overall learning experience.
 
 ---
 
 ## Features
 
-- **Smart Document Processing** – Upload PDFs, DOCX, TXT; automatic text extraction, AI‑generated summaries, and tagging.
-- **Semantic Search** – Find documents by meaning using sentence‑transformers embeddings stored in a FAISS index.
-- **RAG Chatbot** – Conversational AI that retrieves precise answers from the indexed knowledge base.
-- **AI Quiz Generator** – Dynamically creates practice questions based on document content.
-- **Flashcards & Leaderboard** – Generate study flashcards and track quiz scores across users.
-- **Rich Analytics** – Dashboard showing search trends, knowledge gaps, and user engagement.
-- **Premium UI** – Glass‑morphism design, interactive D3.js knowledge graph, and dynamic notifications.
-- **User & Role Management** – Admins can create, edit, and deactivate users (Admin, Faculty, Student).
-- **Document Management** – Approve pending uploads, delete documents, and view detailed stats.
-- **Announcements & Notifications** – Broadcast messages and push real‑time alerts to users.
-
----
-
-## Security
-- **Role‑Based Access Control (RBAC)** – Distinct permissions for Admins, Faculty, and Students.
-- **Authentication** – JWT‑based protected API endpoints and frontend routes.
-- **Secure Configuration** – Sensitive credentials (e.g., secret keys) stored in environment variables.
+- Upload and manage PDF, DOCX, and TXT resources.
+- RAG-based chatbot for document-aware question answering.
+- AI-generated document summarization, categorization, and keyword extraction.
+- AI-generated quizzes and flashcards from uploaded study materials.
+- AI-powered semantic document search powered by Sentence Transformers.
+- Personalized student dashboard with quiz history and learning progress.
+- Faculty dashboard for resource management and student performance insights.
+- Role-based authentication for Administrators, Faculty, and Students.
+- Responsive interface with document preview ,bookmarking and discussion support
 
 ---
 
 ## Tech Stack
 
-| Layer      | Technology                               |
-|------------|------------------------------------------|
-| Backend    | FastAPI, SQLAlchemy, SQLite, FAISS, LangChain, Google Gemini |
-| Frontend   | React (Vite), Vanilla CSS, D3.js, Glass‑morphism UI |
-| Database   | SQLite (relational) + FAISS index for embeddings |
-| Testing    | Pytest, Jest (frontend) |
-| Deployment | Docker (optional), Uvicorn server |
+| Category | Technologies |
+|----------|--------------|
+| **Frontend** | React, HTML, CSS, JavaScript |
+| **Backend** | FastAPI, Python |
+| **Database** | SQLite |
+| **AI & NLP** | Google Gemini API, LangChain, Sentence Transformers|
+| **Authentication** | JWT Authentication |
 
 ---
 
@@ -59,77 +52,81 @@ EduMind/
 ├─ requirements.txt         # Python dependencies
 └─ README.md                # Project documentation (this file)
 ```
-
 ---
 
 ## Getting Started
-### Prerequisites
-- **Python 3.9+** (added to PATH)
-- **Node.js & npm** (for the React frontend)
-- **Git** (optional, for version control)
 
-### 1️⃣ Clone the Repository
+### Prerequisites
+
+- Python 3.9+
+- Node.js & npm
+
+### Clone the Repository
+
 ```bash
-git clone <repository_url>
+git clone https://github.com/your-username/EduMind.git
 cd EduMind
 ```
 
-### 2️⃣ Set Up the Backend
+### Backend Setup
+
 ```bash
-# Create and activate a virtual environment
 python -m venv venv
+
 # Windows
-.\\venv\\Scripts\\activate
+venv\Scripts\activate
+
 # macOS/Linux
 source venv/bin/activate
 
-# Install Python dependencies
 pip install -r requirements.txt
+
+uvicorn app.main:app --reload
 ```
 
-### 3️⃣ Configure Environment Variables
-Create a `.env` file in the project root:
-```dotenv
-SECRET_KEY=your-secret-key
-ALGORITHM=HS256
-ACCESS_TOKEN_EXPIRE_MINUTES=30
-```
+### Frontend Setup
 
-### 4️⃣ Seed the Demo Database
-```bash
-python seed_demo.py
-```
-The script creates users, categories, sample documents, quizzes, comments, notifications, and a pending document for moderation.
-
-### 5️⃣ Run the Backend Server
-```bash
-uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
-```
-Backend API will be available at **http://localhost:8000**.
-
-### 6️⃣ Run the Frontend
 ```bash
 cd frontend
-npm install
-npm run dev   # Vite dev server on http://localhost:5173
-```
-Open the URL in your browser to explore the portal.
 
+npm install
+
+npm run dev
+```
 ---
 
 ## Running Tests
-Backend tests use **pytest**. To execute:
-```bash
-cd app
-pytest
-```
-Frontend tests (if any) can be run with **npm test** inside the `frontend` folder.
 
+### Backend (FastAPI)
+
+1. Ensure your virtual environment is activated.
+2. Install testing dependencies (pytest is already listed in `requirements.txt`):
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run the test suite with verbose output:
+   ```bash
+   cd app
+   pytest -v
+   ```
+
+### Frontend (React)
+
+1. Navigate to the frontend directory:
+   ```bash
+   cd frontend
+   ```
+2. Install dev dependencies (if not already done):
+   ```bash
+   npm install
+   ```
+3. Execute the Jest test runner:
+   ```bash
+   npm test
 ---
-
 ## License
-This project is open source and available under the **MIT License**.
 
----
+This project is licensed under the **MIT License**.
+
 
 
