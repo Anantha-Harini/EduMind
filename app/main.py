@@ -1,6 +1,10 @@
+# Updated EduMind backend main entrypoint with static file serving and health endpoint
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 import os
+import pathlib
 
 from . import models
 from .database import engine
@@ -13,22 +17,35 @@ app = FastAPI(title="EduMind API", version="2.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], # Allow React frontend
+    allow_origins=["*"],  # Allow React frontend
     allow_credentials=True,
     allow_methods=["*"],
-    allow_headers=["*"]
+    allow_headers=["*"],
 )
 
-# Initialize storage dirs
+# Serve React build (single service deployment)
+BUILD_DIR = pathlib.Path(__file__).parent.parent / "frontend" / "dist"
+app.mount("/", StaticFiles(directory=BUILD_DIR, html=True), name="frontend")
+
+# Initialize storage directories
 for d in ["uploads"]:
     os.makedirs(d, exist_ok=True)
 
 # Register all routers
-for router in [auth.router, documents.router, chatbot.router, categories.router,
-               profile.router, notifications.router, analytics.router, questions.router, extra.router]:
+for router in [
+    auth.router,
+    documents.router,
+    chatbot.router,
+    categories.router,
+    profile.router,
+    notifications.router,
+    analytics.router,
+    questions.router,
+    extra.router,
+]:
     app.include_router(router)
 
-@app.get("/")
-async def root():
-    return {"message": "Welcome to the EduMind API. Access /docs for Swagger UI."}
+@app.get("/health")
+async def health():
+    return {"message": "EduMind API is healthy"}
 
