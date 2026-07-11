@@ -1,6 +1,7 @@
 import bcrypt
 from datetime import datetime, timedelta
 from typing import Optional
+import os  # added for env var support
 
 from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
@@ -10,7 +11,7 @@ from sqlalchemy.orm import Session
 from . import models, schemas, database
 
 # Config
-SECRET_KEY = "HACKATHON_SUPER_SECRET_KEY_MVP" # In prod, use env var
+SECRET_KEY = os.getenv("JWT_SECRET", "HACKATHON_SUPER_SECRET_KEY_MVP")  # Use env var if set
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 480  # 8 hours
 
@@ -41,8 +42,11 @@ def get_current_user(token: str = Depends(oauth2_scheme), db: Session = Depends(
     )
     try:
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        # Debug: log payload contents (dev only)
+        print("🔐 Decoded JWT payload:", payload)
         email: str = payload.get("sub")
         if email is None:
+            print("⚠️ JWT payload missing 'sub' claim")
             raise credentials_exception
         token_data = schemas.TokenData(email=email)
     except JWTError:

@@ -23,15 +23,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Serve React build (single service deployment)
-BUILD_DIR = pathlib.Path(__file__).parent.parent / "frontend" / "dist"
-app.mount("/", StaticFiles(directory=BUILD_DIR, html=True), name="frontend")
-
-# Initialize storage directories
-for d in ["uploads"]:
-    os.makedirs(d, exist_ok=True)
-
-# Register all routers
+# Register all routers first so they take precedence
 for router in [
     auth.router,
     documents.router,
@@ -45,6 +37,15 @@ for router in [
 ]:
     app.include_router(router)
 
+# Serve React build (single service deployment) after routers
+BUILD_DIR = pathlib.Path(__file__).parent.parent / "frontend" / "dist"
+app.mount("/", StaticFiles(directory=BUILD_DIR, html=True), name="frontend")
+
+# Initialize storage directories
+for d in ["uploads"]:
+    os.makedirs(d, exist_ok=True)
+
+# Simple health check
 @app.get("/health")
 async def health():
     return {"message": "EduMind API is healthy"}
