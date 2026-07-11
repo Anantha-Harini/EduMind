@@ -1,4 +1,4 @@
-# EduMind – AI-Powered Learning & Knowledge Management Platform
+# EduMind – AI-Powered Learning Platform
 
 ## Project Overview
 
