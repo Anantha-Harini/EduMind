@@ -1,0 +1,141 @@
+COMPUTER NETWORKS
+
+Introduction
+
+A computer network is a collection of interconnected devices that communicate and share resources using communication protocols. Networks enable users to exchange information, access shared files, communicate through applications, and utilize internet services efficiently.
+
+Types of Networks
+
+1. LAN (Local Area Network)
+A LAN connects computers within a limited geographical area such as a home, school, or office. It provides high-speed communication and is usually privately owned.
+
+2. MAN (Metropolitan Area Network)
+A MAN covers an entire city or metropolitan region by connecting multiple LANs.
+
+3. WAN (Wide Area Network)
+A WAN connects computers over large geographical distances such as countries or continents. The Internet is the largest WAN.
+
+Network Topologies
+
+Bus Topology
+All devices share a common communication cable. It is inexpensive but difficult to troubleshoot if the main cable fails.
+
+Star Topology
+Each device is connected to a central switch or hub. It is reliable and easy to maintain.
+
+Ring Topology
+Devices are connected in a circular fashion. Data travels around the ring until it reaches its destination.
+
+Mesh Topology
+Every device is connected to multiple other devices, providing high reliability and redundancy.
+
+OSI Reference Model
+
+The OSI model consists of seven layers:
+
+1. Physical Layer
+Responsible for transmitting raw bits through physical media.
+
+2. Data Link Layer
+Provides error detection, framing, and reliable communication between directly connected devices.
+
+3. Network Layer
+Responsible for logical addressing and routing of packets between networks.
+
+4. Transport Layer
+Provides reliable end-to-end communication using protocols such as TCP and UDP.
+
+5. Session Layer
+Establishes, manages, and terminates communication sessions.
+
+6. Presentation Layer
+Handles data encryption, compression, and formatting.
+
+7. Application Layer
+Provides network services to end-user applications such as HTTP, FTP, SMTP, and DNS.
+
+TCP vs UDP
+
+TCP (Transmission Control Protocol)
+- Connection-oriented
+- Reliable communication
+- Error checking and retransmission
+- Used for web browsing, email, and file transfer
+
+UDP (User Datagram Protocol)
+- Connectionless
+- Faster communication
+- No guarantee of delivery
+- Used for video streaming, online gaming, and VoIP
+
+IP Address
+
+An IP address uniquely identifies a device connected to a network.
+
+IPv4
+Uses 32-bit addressing and consists of four decimal numbers separated by dots.
+
+Example:
+192.168.1.10
+
+IPv6
+Uses 128-bit addressing to overcome IPv4 address limitations.
+
+Example:
+2001:0db8:85a3:0000:0000:8a2e:0370:7334
+
+Routing
+
+Routing is the process of selecting the best path for forwarding data packets between networks. Routers maintain routing tables and use routing algorithms to determine efficient paths.
+
+Common Network Devices
+
+Router
+Connects multiple networks and forwards packets.
+
+Switch
+Connects devices within a LAN and forwards frames based on MAC addresses.
+
+Hub
+Broadcasts incoming data to all connected devices.
+
+Access Point
+Provides wireless connectivity to network devices.
+
+Firewall
+Monitors and filters incoming and outgoing network traffic to improve security.
+
+DNS (Domain Name System)
+
+DNS translates human-readable domain names into IP addresses.
+
+Example:
+www.google.com → 142.250.183.78
+
+HTTP and HTTPS
+
+HTTP is used for communication between web browsers and servers.
+
+HTTPS provides secure communication using SSL/TLS encryption.
+
+Advantages of Computer Networks
+
+- Resource sharing
+- Faster communication
+- Remote access
+- Centralized data management
+- Easy collaboration
+- Cost efficiency
+
+Applications
+
+- Online education
+- Cloud computing
+- Video conferencing
+- Social networking
+- E-commerce
+- Internet banking
+
+Conclusion
+
+Computer networks form the backbone of modern digital communication. Understanding networking concepts such as network types, protocols, routing, and the OSI model is essential for designing secure and efficient communication systems.
