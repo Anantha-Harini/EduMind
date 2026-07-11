@@ -7,7 +7,6 @@ EduMind is an AI-powered learning and knowledge management platform that enables
 > **For Live Website -** **[Click here](https://edumind-mgtr.onrender.com)**
 
 <img width="1280" height="720" alt="For Demo Video -check screenshots folder" src="https://github.com/Anantha-Harini/EduMind/blob/main/screenshots/EduMind.gif">
----
 
 ## Features
 
